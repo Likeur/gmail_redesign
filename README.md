@@ -2,7 +2,8 @@
 
 A modern, sleek redesign of Gmail built with **Vue.js 3** and **Tailwind CSS v4**. This project showcases a dark-themed, responsive email client with smooth animations and a premium user experience.
 
-![Gmail Redesign Preview](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80)
+<img width="1920" height="1080" alt="gmail redesign" src="https://github.com/user-attachments/assets/34e94710-e688-40b4-8852-e49e37befd6c" />
+
 
 ## ✨ Features
 
@@ -197,7 +198,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Antoine Piedanna** - [GitHub](https://github.com/Likeur)
+**Likeur (Jack Simba)** - [GitHub](https://github.com/Likeur)
 
 ---
 
