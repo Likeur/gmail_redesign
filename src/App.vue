@@ -334,6 +334,40 @@ const handleSelectEmail = (id) => {
       @close="closeCompose"
       @send="handleSendEmail"
     />
+
+    <!-- Mobile Warning Overlay -->
+    <div 
+      v-if="isMobile" 
+      class="fixed inset-0 z-[9999] bg-[#121212] flex items-center justify-center p-6"
+    >
+      <div class="max-w-md text-center">
+        <!-- Icon -->
+        <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-amber-500/20 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+        </div>
+        
+        <!-- Title -->
+        <h2 class="text-2xl font-semibold text-white mb-3">
+          Accès sur ordinateur uniquement
+        </h2>
+        
+        <!-- Description -->
+        <p class="text-gray-400 mb-6 leading-relaxed">
+          Cette interface Gmail a été conçue pour une utilisation sur ordinateur. 
+          Veuillez accéder à cette application depuis un ordinateur de bureau ou un ordinateur portable pour une expérience optimale.
+        </p>
+        
+        <!-- Warning Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/20">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+          </svg>
+          <span class="text-sm text-amber-500 font-medium">Mobile non supporté</span>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
